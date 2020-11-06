@@ -1,0 +1,37 @@
+{
+  "name": "gatemaker",
+  "version": "0.1.0",
+  "description": "macOS quarantine utilities for Node.js and Electron",
+  "author": "Javan Makhmali",
+  "license": "MIT",
+  "scripts": {
+    "test": "tape test/test-*.js"
+  },
+  "dependencies": {
+    "uuid": "^8.3.0"
+  },
+  "optionalDependencies": {
+    "fs-xattr": "^0.3.1"
+  },
+  "devDependencies": {
+    "tape": "^5.0.1"
+  },
+  "bin": {
+    "quarantine": "./cli.js"
+  },
+  "keywords": [
+    "macos",
+    "gatekeeper",
+    "quarantine",
+    "xattr",
+    "electron"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javan/gatemaker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/javan/gatemaker/issues"
+  },
+  "homepage": "https://github.com/javan/gatemaker#readme"
+}
