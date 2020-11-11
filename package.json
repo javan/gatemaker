@@ -1,6 +1,6 @@
 {
   "name": "gatemaker",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "macOS quarantine utilities for Node.js and Electron",
   "author": "Javan Makhmali",
   "license": "MIT",
