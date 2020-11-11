@@ -1,8 +1,11 @@
 const xattr = require("fs-xattr")
 const uuid = require("uuid")
 
+const IS_DARWIN = process.platform == "darwin"
+const IS_MAC_OS = IS_DARWIN && require("os").release() >= "16"
+
 const ATTRIBUTE = "com.apple.quarantine"
-const TYPE = "0081"
+const TYPE = IS_MAC_OS ? "0081" : "0001"
 
 function createValue(agentName) {
   const timeStamp = Math.floor(Date.now() / 1000).toString(16)
