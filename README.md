@@ -17,10 +17,10 @@ quarantine.sync(filePath, agentName)
 
 ### Electron Support
 
-Load `gatemaker/electron-support` in your main process to quarantine all [downloads](https://www.electronjs.org/docs/api/download-item) automatically.
+Load `gatemaker/electron-setup` in your main process to quarantine all [downloads](https://www.electronjs.org/docs/api/download-item) automatically.
 
 ```js
-require("gatemaker/electron-support")
+require("gatemaker/electron-setup")
 const { app } = require("electron")
 // …
 ```
