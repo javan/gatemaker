@@ -23,7 +23,7 @@ function sessionWillDownload(event, download) {
 
 function downloadDone(event, state) {
   if (state != "completed") return
-  observer.emit("download-completed", event.sender)
+  observer.emit("download-completed", this)
 }
 
 module.exports = observer
